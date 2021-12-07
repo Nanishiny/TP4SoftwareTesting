@@ -8,5 +8,24 @@ namespace TP4.Models
 {
     public class Parser
     {
+        public  (Operator,string) readInput(string input)
+        {
+         
+            if ( input[0] == '+')
+            {
+                return (Operator.add, input.Remove(0,2));
+            }
+            return (Operator.exit,"");
+        }
     }
+
+    public enum Operator
+    {
+        add,
+        remove,
+        statusTodo,
+        statusDone,
+        exit
+    }
+
 }

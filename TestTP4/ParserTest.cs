@@ -17,7 +17,7 @@ namespace TP4
         [Test]
         public void InputPlus()
         {
-
+            Assert.AreEqual((Operator.add, "Se faire couper les cheveux"), parser.readInput("+ Se faire couper les cheveux"));
         }
       
     }
