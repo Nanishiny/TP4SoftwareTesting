@@ -17,6 +17,9 @@ namespace TP4.Models
             }else if(input[0] == '-')
             {
                 return (Operator.remove, input.Remove(0, 2));
+            }else if(input[0] == 'x')
+            {
+                return (Operator.statusDone, input.Remove(0, 2));
             }
             return (Operator.exit,"");
         }

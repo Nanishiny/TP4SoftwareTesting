@@ -25,5 +25,10 @@ namespace TP4
         {
             Assert.AreEqual((Operator.remove, "Se faire couper les cheveux"), parser.readInput("- Se faire couper les cheveux"));
         }
+        [Test]
+        public void InputX()
+        {
+            Assert.AreEqual((Operator.statusDone, "Se faire couper les cheveux"), parser.readInput("x Se faire couper les cheveux"));
+        }
     }
 }
