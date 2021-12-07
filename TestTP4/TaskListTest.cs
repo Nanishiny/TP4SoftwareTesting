@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System.Collections.Generic;
 using TP4.Models;
 
 namespace TP4
@@ -15,9 +16,11 @@ namespace TP4
         }
 
         [Test]
-        public void AddTask()
+        public void IsTaskInTasks()
         {
-
+            Assert.AreEqual(new List<Task>(), taskList.Tasks);
         }
+
+
     }
 }
