@@ -7,7 +7,7 @@ namespace TP4.Models
 {
     public class TaskList
     {
-        public List<Task> Tasks { get; set; }
+        public List<Task> Tasks { get; }
 
         public TaskList()
         {
@@ -19,5 +19,9 @@ namespace TP4.Models
             Tasks.Add(task);
         }
 
+        public void remove(Task task)
+        {
+            Tasks.Remove(task);
+        }
     }
 }
