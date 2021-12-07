@@ -27,5 +27,12 @@ namespace TP4
             task.Id = 0;
             Assert.AreEqual(0, task.Id);
         }
+
+        [Test]
+        public void IsStatus()
+        {
+            task.Status = TaskStatus.todo;
+            Assert.AreEqual(TaskStatus.todo, task.Status);
+        }
     }
 }
