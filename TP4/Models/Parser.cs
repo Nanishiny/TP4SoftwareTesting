@@ -10,14 +10,16 @@ namespace TP4.Models
     {
         public  (Operator,string) readInput(string input)
         {
-         
-            if ( input[0] == '+')
+
+            if (input[0] == '+')
             {
-                return (Operator.add, input.Remove(0,2));
-            }else if(input[0] == '-')
+                return (Operator.add, input.Remove(0, 2));
+            }
+            else if (input[0] == '-')
             {
                 return (Operator.remove, input.Remove(0, 2));
-            }else if(input[0] == 'x')
+            }
+            else if (input[0] == 'x')
             {
                 return (Operator.statusDone, input.Remove(0, 2));
             }
@@ -25,7 +27,10 @@ namespace TP4.Models
             {
                 return (Operator.statusTodo, input.Remove(0, 2));
             }
-            return (Operator.exit,"");
+            else
+            {
+                return (Operator.exit, "");
+            }
         }
     }
 

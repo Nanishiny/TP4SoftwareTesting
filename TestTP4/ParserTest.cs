@@ -35,5 +35,11 @@ namespace TP4
         {
             Assert.AreEqual((Operator.statusTodo, "Se faire couper les cheveux"), parser.readInput("o Se faire couper les cheveux"));
         }
+
+        [Test]
+        public void InputQ()
+        {
+            Assert.AreEqual((Operator.exit, ""), parser.readInput("q"));
+        }
     }
 }
