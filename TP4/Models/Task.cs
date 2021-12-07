@@ -8,6 +8,7 @@ namespace TP4.Models
 {
     public class Task
     {
+
         public string Description { get; set; }
         public int Id { get; set; }
         public TaskStatus Status { get; set; }

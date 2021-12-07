@@ -17,15 +17,15 @@ namespace TP4
         [Test]
         public void IsDescription()
         {
-            task.description = "ceci est une description";
-            Assert.AreEqual("ceci est une description",task.description);
+            task.Description = "ceci est une description";
+            Assert.AreEqual("ceci est une description",task.Description);
 
         }
         [Test]
         public void IsID()
         {
-            task.id = 0;
-            Assert.AreEqual(0, task.id);
+            task.Id = 0;
+            Assert.AreEqual(0, task.Id);
         }
     }
 }
