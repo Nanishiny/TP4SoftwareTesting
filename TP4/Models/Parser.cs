@@ -14,6 +14,9 @@ namespace TP4.Models
             if ( input[0] == '+')
             {
                 return (Operator.add, input.Remove(0,2));
+            }else if(input[0] == '-')
+            {
+                return (Operator.remove, input.Remove(0, 2));
             }
             return (Operator.exit,"");
         }
