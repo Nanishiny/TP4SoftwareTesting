@@ -21,6 +21,10 @@ namespace TP4.Models
             {
                 return (Operator.statusDone, input.Remove(0, 2));
             }
+            else if (input[0] == 'o')
+            {
+                return (Operator.statusTodo, input.Remove(0, 2));
+            }
             return (Operator.exit,"");
         }
     }
