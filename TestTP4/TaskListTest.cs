@@ -21,6 +21,14 @@ namespace TP4
             Assert.AreEqual(new List<Task>(), taskList.Tasks);
         }
 
+        [Test]
+        public void AddTask()
+        {
+            Task task = new Task();
+            taskList.add(task);
+            Assert.AreEqual(new List<Task> { task }, taskList.Tasks);
+        }
+
 
     }
 }
